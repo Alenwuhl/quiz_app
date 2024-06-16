@@ -10,7 +10,7 @@ class QuestionsScreen extends StatefulWidget {
 
 class _QuestionsScreenState extends State<QuestionsScreen> {
   int _currentQuestionIndex = 0;
-  List<int> _selectedAnswers = [];
+  final List<int> _selectedAnswers = [];
   final List<Question> _questions = [
     Question(
       text: 'Which is the capital of Israel?',
@@ -87,7 +87,7 @@ class _QuestionsScreenState extends State<QuestionsScreen> {
                   ),
                 ),
               );
-            }).toList(),
+            }),
           ],
         ),
       ),

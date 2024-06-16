@@ -39,7 +39,7 @@ class ResultScreen extends StatelessWidget {
             Padding(
               padding: const EdgeInsets.all(20.0),
               child: Text(
-                'You got $correctAnswers out of ${questions.length} correct (${percentage.toStringAsFixed(1)}%)',
+                'You got $correctAnswers out of ${questions.length} correct (${percentage.toStringAsFixed(0)}%)',
                 style: const TextStyle(
                   fontSize: 20,
                   fontWeight: FontWeight.bold,
